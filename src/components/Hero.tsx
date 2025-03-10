@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { BookOpen, GraduationCap, Users } from 'lucide-react';
 
@@ -53,12 +54,16 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-islamic-green hover:bg-islamic-darkGreen text-white px-6 py-6">
-                Apply Now
-              </Button>
-              <Button variant="outline" className="border-islamic-gold text-islamic-gold hover:bg-islamic-gold hover:text-white px-6 py-6">
-                Explore Programs
-              </Button>
+              <Link to="/admissions">
+                <Button className="bg-islamic-green hover:bg-islamic-darkGreen text-white px-6 py-6">
+                  Apply Now
+                </Button>
+              </Link>
+              <Link to="/courses">
+                <Button variant="outline" className="border-islamic-gold text-islamic-gold hover:bg-islamic-gold hover:text-white px-6 py-6">
+                  Explore Programs
+                </Button>
+              </Link>
             </div>
           </div>
           

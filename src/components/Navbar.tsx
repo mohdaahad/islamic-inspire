@@ -48,9 +48,11 @@ const Navbar = () => {
               <MessageSquare size={18} className="mr-1" />
               <span>Contact</span>
             </Link>
-            <Button className="bg-islamic-green hover:bg-islamic-darkGreen text-white ml-2">
-              Student Portal
-            </Button>
+            <Link to="/student-portal">
+              <Button className="bg-islamic-green hover:bg-islamic-darkGreen text-white ml-2">
+                Student Portal
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Nav Toggle */}
@@ -104,9 +106,11 @@ const Navbar = () => {
               <span>Contact</span>
             </div>
           </Link>
-          <Button className="w-full bg-islamic-green hover:bg-islamic-darkGreen text-white">
-            Student Portal
-          </Button>
+          <Link to="/student-portal" className="block">
+            <Button className="w-full bg-islamic-green hover:bg-islamic-darkGreen text-white">
+              Student Portal
+            </Button>
+          </Link>
         </div>
       )}
     </nav>
